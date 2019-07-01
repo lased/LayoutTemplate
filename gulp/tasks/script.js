@@ -11,7 +11,7 @@ module.exports = function () {
     $.gulp.task('scripts:build', function () {
         return $.gulp
             .src(['src/js/**/*.js', 'src/components/**/*.js'])
-            .pipe($.gp.uglify())
+            .pipe($.gp.uglifyEs.default())
             .pipe($.gulp.dest('dist/js'));
     });
 }

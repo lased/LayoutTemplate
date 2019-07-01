@@ -17,7 +17,6 @@ module.exports = function () {
                 .on("error", $.gp.notify.onError("Error: <%= error.message %>"))
             )
             .pipe($.gp.autoprefixer({
-                browsers: ['last 10 versions'],
                 cascade: false
             }))
             .pipe($.gp.sourcemaps.write())
@@ -35,10 +34,10 @@ module.exports = function () {
                 .on("error", $.gp.notify.onError("Error: <%= error.message %>"))
             )
             .pipe($.gp.autoprefixer({
-                browsers: ['last 10 versions'],
                 cascade: false
             }))
             .pipe(postcss(plugins))
+            .pipe($.gp.groupCssMediaQueries())
             .pipe($.gp.csso())
             .pipe($.gulp.dest('dist/css'))
     });
