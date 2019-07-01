@@ -1,0 +1,105 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Layout template page
+        link(href="css/grid/main.css", rel="stylesheet")  
+        link(href="css/slider/main.css", rel="stylesheet")  
+        link(href="css/main.css", rel="stylesheet")  
+    body
+        .slider
+            .slider__list
+                .slider__item 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deserunt nisi at eveniet fugiat earum temporibus iste eligendi animi eius delectus quo odit sunt ab facilis culpa, et maiores id?
+                .slider__item 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deserunt nisi at eveniet fugiat earum temporibus iste eligendi animi eius delectus quo odit sunt ab facilis culpa, et maiores id?
+                .slider__item.slider__item--active 3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deserunt nisi at eveniet fugiat earum temporibus iste eligendi animi eius delectus quo odit sunt ab facilis culpa, et maiores id?
+                .slider__item 4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit deserunt nisi at eveniet fugiat earum temporibus iste eligendi animi eius delectus quo odit sunt ab facilis culpa, et maiores id?
+            ul.slider__order
+        
+        .grid
+            h2 Responsive
+            .row
+                .col-6.col-md-3.col-xs-12 .col-6  .col-md-3 .col-xs-12
+                .col-6.col-md.col-xs-12 .col-6  .col-md (auto width) .col-xs-12
+                .col-6.col-md-3.col-xs-12 .col-6  .col-md-3 .col-xs-12
+
+            h2 Responsive column-xs
+            .row.column-xs
+                .col .col
+                .col .col
+                .col .col
+            
+            h2 Offset a column
+            .row
+                .col-3.col-offset-3 .col-3 .col-offset-3
+                .col-3.col-offset-2 .col-3 .col-offset-2
+
+            h2 Alignment
+            h3 .start-
+            .row.start
+                .col-3 .col-3
+
+            h3 .center-
+            .row.center
+                .col-3 .col-3
+            
+            h3 .end-
+            .row.end
+                .col-3 .col-3
+
+            h3 .top-
+            .row.top
+                .col-3 .col-3
+
+            h3 .middle-
+            .row.middle
+                .col-3 .col-3
+            
+            h3 .bottom-
+            .row.bottom
+                .col-3 .col-3
+
+            h3 .self-start-
+            .row
+                .col-3 .col-3
+                .col.self-start .col-3
+                .col-3 .col-3
+            
+            h3 .self-center-
+            .row
+                .col-3 .col-3
+                .col.self-center .col-3
+                .col-3 .col-3
+            
+            h3 .self-end-
+            .row
+                .col-3 .col-3
+                .col.self-end .col-3
+                .col-3 .col-3
+
+            h2 Distribution
+            h3 .around-
+            .row.around
+                .col-3 .col-3
+                .col-3 .col-3
+
+            h3 .between-
+            .row.between
+                .col-3 .col-3
+                .col-3 .col-3
+
+            h2 Reordering
+            h3 .first-
+            .row
+                .col 1
+                .col 2
+                b.col.first 3
+
+            h3 .last-
+            .row
+                b.col.last 1
+                .col 2
+                .col 3
+                
+        script(src="js/slider/main.js")
+        script(src="js/main.js")

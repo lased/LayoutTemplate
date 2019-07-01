@@ -1,0 +1,22 @@
+// Custom styles
+.slider {
+    margin: auto;
+    max-width: 400px;
+}
+
+.grid {
+    margin: auto;
+    max-width: 600px;
+
+    .row {
+        height: 100px;
+        background-color: aquamarine;
+
+        [class*="col"] {
+            padding: 10px;
+            background-color: cornflowerblue;
+            border: 1px solid gray;
+            color: #fff;
+        }
+    }
+}

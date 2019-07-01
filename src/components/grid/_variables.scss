@@ -1,0 +1,9 @@
+// Set the number of columns you want to use on your layout.
+$grid-columns: 12;
+// Set breakpoints 
+$breakpoints: (
+    'xs': ('max': '599px'),
+    'sm': ('min': '600px', 'max': '1023px'),
+    'md': ('min': '1024px', 'max': '1439px'),
+    'lg': ('min': '1440px')
+);
